@@ -1,0 +1,94 @@
+<hmtl>
+  <head>
+    <title>SPA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width" content="initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel='icon' type='image/jpg' href='icon.png' sizes='16*16' >
+
+  </head>
+  <body>
+    <!-- Initialize a new AngularJS app and associate it with a module named "instantSearch"-->
+<div ng-app="instantSearch" ng-controller="InstantSearchController">
+
+    <div class="bar">
+        <!-- Create a binding between the searchString model and the text field -->
+        <input type="text" ng-model="searchString" placeholder="places,cateogories" />
+    </div>
+    <div id="look">
+      <button id="listView" value="Grid View" ng-click="viewtype='list'"></button>
+      <button id="gridView" value="Grid View" ng-click="viewtype='grid'"></button>
+  </div>
+    <link href = "{{viewtype}}.css" rel = "stylesheet"/>
+    <link href = "grid.css" rel = "stylesheet"/>
+    <!--
+    <ul id="navBar">
+    <li><a class="anchors" ng-repeat="j in items" href = "#{{j.title}}">{{j.title}}</a></li>
+  </ul>
+      -->
+    <ul id="grid">
+
+        <li class ="block" ng-repeat="i in items | searchFor:searchString" id={{i.title}}>
+            <a id="links">
+              <!--<div id="info"><p id="description">{{i.title}}</p></div>-->
+            <img class="gallery" id={{i.title}} ng-src="{{i.image}}" title="{{i.title}} - {{i.category}}"  /></a>
+            <!--<a href="{{i.image}}" id="{{i.title}}" download><input id="downloadbtn" type="button" title="Preview"></input></a>
+            <p>{{i.title}}</p>-->
+            <button id="likes" title="likes"> </button>
+            <span id="likes_count"> {{i.likes}}</span>
+            <button id="comments" title="Category"> </button>
+            <span id="comments_count"> {{i.category}}</span>
+            <button id="infobtn" onclick="info('{{i.title}}','{{i.info}}','{{i.image}}' )" title="click to see more about this place">+</button>
+        </li>
+      </ul>
+</div>
+  </body>
+  <script>
+  $(document).on('click', 'a', function(event){
+      event.preventDefault();
+
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+  });
+  function info(title,txtinfo,url){
+    document.getElementById("grid").style.opacity="0.4";
+    console.log(txtinfo);
+      var popup = document.createElement("div");
+    popup.setAttribute("class","alert");
+    var closebtn = document.createElement("span");
+    closebtn.setAttribute("class","closebtn");
+    closebtn.innerHTML = "x";
+    var popupImage = document.createElement("img");
+    popupImage.setAttribute("src",url);
+    popupImage.setAttribute("width","100%");
+    popupImage.setAttribute("height","70%");
+    popup.appendChild(popupImage);
+      popupImage.setAttribute("id","popupImage");
+      var infotitle = document.createElement("h2");
+      infotitle.setAttribute("id","infotitle")
+      infotitle.innerHTML = title;
+      popup.appendChild(infotitle);
+    var infotext = document.createElement("p");
+    infotext.setAttribute("id","description")
+    infotext.innerHTML = txtinfo;
+    popup.appendChild(infotext);
+    popup.appendChild(closebtn);
+    document.body.appendChild(popup);
+    $('html, body').animate({scrollTop:80},900);
+    var i;
+    var close = document.getElementsByClassName("closebtn");
+    for(i=0;i<close.length;i++){
+      close[i].onclick = function(){
+          var div = this.parentElement;
+          div.style.opacity = "0";
+          document.getElementById("grid").style.opacity="1";
+          /*document.getElementsByClassName("gallery").style.opacity = "1"*/
+          setTimeout(function(){ div.style.display = "none"; }, 600);
+}
+      }
+    }
+  </script>
+</html>
