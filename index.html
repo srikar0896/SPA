@@ -80,12 +80,14 @@
     $('html, body').animate({scrollTop:80},900);
     var i;
     var close = document.getElementsByClassName("closebtn");
+    $('body').addClass('stop-scrolling');
     for(i=0;i<close.length;i++){
       close[i].onclick = function(){
           var div = this.parentElement;
           div.style.opacity = "0";
           document.getElementById("grid").style.opacity="1";
           /*document.getElementsByClassName("gallery").style.opacity = "1"*/
+          $('body').removeClass('stop-scrolling');
           setTimeout(function(){ div.style.display = "none"; }, 600);
 }
       }
