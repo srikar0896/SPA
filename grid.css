@@ -6,6 +6,10 @@ html{
   margin:0;
   padding:0;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
 body{
   font:15px/1.3 'Open Sans', sans-serif;
@@ -66,6 +70,10 @@ section, footer, header, aside, nav{
   font-weight:lighter;
   outline: none;
   text-indent: 40px;
+}
+.bar input:not(:focus){
+  width:15%;
+  transition: width 0.6s;
 }
 .bar input:focus{
   width:25%;
