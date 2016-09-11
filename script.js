@@ -46,7 +46,7 @@ $scope.items = [
     title: 'Arashimaya Forest,Japan',
     info:'The famous forest is literally littered with famous tombs, temples is close to the "Moon Crossing Bridge".  Its worth exploring.',
     image: 'http://listogre.com/wp-content/uploads/2014/02/Sagano-Bamboo-Forest-Arashiyama-Japan-wallpaper-Full-HD.jpg',
-    category: "Exotic Places",
+    category: "Exotic  ",
     likes:2114
 
   },
@@ -64,7 +64,7 @@ $scope.items = [
     info:'After watching the film "Frozen", I felt compelled to include an icy wonderland. The ice caves fit the bill. The caves exists because the glacier is melting.',
     image: 'http://listogre.com/wp-content/uploads/2014/02/2048.jpg',
     likes:1291,
-    category: "Exotic Places"
+    category: "Exotic  "
   },
   {
     url: '#',
@@ -72,7 +72,7 @@ $scope.items = [
     info:'Bagan is home to the largest and densest concentration of Buddhist temples and stupas in the world. Once a mighty city was eventually sacked by the mongols.',
     image: 'http://listogre.com/wp-content/uploads/2014/02/bagan-again.jpg',
     likes:432,
-    category: "Exotic Places"
+    category: "Exotic  "
   },
   {
     url: '#',
@@ -85,10 +85,10 @@ $scope.items = [
   {
     url: '#',
     title: 'North Tanzania',
-    info:'Now for something completely different. Tanzania is one of the best places to go for a safari and home to Mount Kilimanjaro.One of the last undiscovered jewels of Africa.',
+    info:'Now for something completely different. Tanzania is one of the best   to go for a safari and home to Mount Kilimanjaro.One of the last undiscovered jewels of Africa.',
     image: 'http://listogre.com/wp-content/uploads/2014/02/Ngorongoro-Crater-in-Northern-Tanzania.jpg',
     likes:916,
-    category: "Exotic Places"
+    category: "Exotic  "
   },
   {
     url: '#',
@@ -96,21 +96,21 @@ $scope.items = [
     info:'This is a true oasis of tranquility. Built in 1980, the flower-shaped temple is surrounded by gardens and interior space is reserved for people of all faiths to come and meditate.',
     image: 'http://images.huffingtonpost.com/2014-05-20-LotusTempleSebastianDelgadoCaicedo-thumb.jpg',
     likes:197,
-    category: "Sacred Places"
+    category: "Sacred  "
   },
   {
     url: '#',
     title: 'Meiji Shinto Shrine, Japan',
     info:'The Meiji Shrine is a Shinto shrine in Tokyo originally built in honor of Japan,s first modern emperor.This is nestled in over 150 acres is traditional favorite of Tokyo residents',
     image: 'http://images.huffingtonpost.com/2014-05-20-MeijiShrinePatrick-thumb.jpg',likes:891,
-    category: "Sacred Places"
+    category: "Sacred  "
   },
   {
     url: '#',
     title: 'Shwedagon Pagoda, Myanmar',
     info:'Rising 100 yards above the city of Rangoon, Myanmar,s Shwedagon Pagoda is, according to many travelers, one of the world,s great wonders.',
     image: 'http://images.huffingtonpost.com/2014-05-20-ShwedagonPayaGerardDecq.jpg',likes:1564,
-    category: "Sacred Places"
+    category: "Sacred  "
   },
   {
     url: '#',
@@ -177,14 +177,14 @@ $scope.items = [
     title: 'Saint-Michel, France',
     info:'None are quite as breathtaking as the chapel of Saint-Michel dAiguilhe. After climbing over 200 steps up a craggy volcanic rock, church and absolutely gorgeous views of the surrounding village.',
     image: 'http://images.huffingtonpost.com/2014-05-20-SaintMichelAiguilheChapelSoleilhacMarieLaure-thumb.jpg',likes:1291,
-    category: "Sacred Places"
+    category: "Sacred  "
   },
   {
     url: '#',
     title: ' Hagia Sophia, Turkey',
     info:'It,s one of the oldest and most architecturally influential places of worship in the world. All cultures a flock to behold her glories is what truly makes the Hagia Sophia special.',
     image: 'http://images.huffingtonpost.com/2014-05-20-HagiaSofiaDriptaRoy-thumb.jpg',likes:1291,
-    category: "Sacred Places"
+    category: "Sacred  "
   },
 
   {
@@ -192,35 +192,35 @@ $scope.items = [
     title: 'Cano Cristales',
     info:'Known as the most beautiful river in the world, and even the "Liquid Rainbow", is someplace you have to visit if you travel to South America. The river itself has no fish at all.',
     image: 'http://listogre.com/wp-content/uploads/2014/02/Cano-Cristales-el-rio-de-colores-en-La-Macarena-Meta.jpg',likes:1291,
-    category: "Exotic Places"
+    category: "Exotic  "
   },
   {
     url: '#',
     title: 'Bali',
     info:'Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple.',
     image: 'http://www.edreams.com/blog/wp-content/uploads/sites/3/2014/07/Photo-by-Alex-Hanoko-via-Flickr.jpg',likes:1291,
-    category: "Romantic Places"
+    category: "Romantic  "
   },
   {
     url: '#',
     title: 'Easter Island',
     info:'Early settlers called the island "Te Pito O Te Henua" (Navel of The World). Officially a territory of Chile, it lies far off in the Pacific Ocean.It is most famous for its enigmatic giant stone statues,built centuries ago.',
     image: 'http://www.edreams.com/blog/wp-content/uploads/sites/3/2014/07/easter-Island-Photo-by-Yulin-Lu-via-Flickr.jpg',likes:2461,
-    category: "Romantic Places"
+    category: "Romantic  "
   },
   {
     url: '#',
     title: 'Ushuaia, Argentina',
     info:'For the romantic duo, however,If that doesn"t make this destination the second most romantic place in the world.',
     image: 'http://blog.edreams.es/images/2012/02/Ushuaia_Foto_di_drand10.jpg',likes:391,
-    category: "Romantic Places"
+    category: "Romantic  "
   },
   {
     url: '#',
     title: 'Paris, France',
     info:'Paris,Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine.The city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honore.',
     image: 'http://blog.edreams.es/images/2012/02/Paris_foto_di_Ferran_Moreno_Lanza.jpg',likes:141,
-    category: "Romantic Places"
+    category: "Romantic  "
   },
 
   {
@@ -228,7 +228,7 @@ $scope.items = [
     title: 'Las Vegas, Nevada',
     info:'Las Vegas, in Nevadas Mojave Desert, is a resort city famed for its vibrant nightlife, centered around 24-hour casinos and other entertainment options.',
     image: 'http://www.edreams.com/blog/wp-content/uploads/sites/3/2014/07/Photo-by-Justin-Brown-via-Flickr.jpg',likes:161,
-    category: "Romantic Places"
+    category: "Romantic  "
   }
 ];
 
